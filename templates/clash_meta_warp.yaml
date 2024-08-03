@@ -21,7 +21,7 @@ proxies:
     tls: true
      skip-cert-verify: true
     ws-opts: 
-      path: /?proxyip=us.ipdb.rr.nu
+      path: /?proxyip=proxyip.us.fxxk.dedyn.io
       headers:
         Host: yxpage.zj0078.dynv6.net  
     servername: yxpage.zj0078.dynv6.net
