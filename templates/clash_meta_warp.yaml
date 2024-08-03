@@ -20,7 +20,7 @@ proxies:
     udp: true
     tls: true
     ws-opts: 
-      path: "/?proxyip=us.ipdb.rr.nu"
+      path: /?proxyip=us.ipdb.rr.nu
       headers:
         Host: chromecfyouxuan.zj0078.workers.dev    
     servername: chromecfyouxuan.zj0078.workers.dev
