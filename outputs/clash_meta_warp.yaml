@@ -15,15 +15,15 @@ proxies:
   type: vless
   server: cf.090227.xyz
   port: 443
-  uuid: 998a0cae-51da-42d2-b912-41193645da37
+  uuid: c0e94983-0442-4e18-9619-1b11f7f533a5
   cipher: auto
   udp: true
   tls: true
   ws-opts:
     path: /?proxyip=us.ipdb.rr.nu
     headers:
-      Host: chromecfyouxuan.zj0078.workers.dev
-  servername: chromecfyouxuan.zj0078.workers.dev
+      Host: yxpage.zj0078.dynv6.net
+  servername: yxpage.zj0078.dynv6.net
   remote-dns-resolve: true
   dns:
   - 1.1.1.1
