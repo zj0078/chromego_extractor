@@ -12,19 +12,18 @@ profile:
 global-client-fingerprint: chrome
 proxies:
 - name: ☁ WARP
-  type: wireguard
-  server: 162.159.192.1
-  port: 2408
-  ip: 172.16.0.2
-  ipv6: 2606:4700:110:87ad:b400:91:eadb:887f
-  private-key: QNbUNHY5lMMxhoaqrDjLtd+dodakZnrnBVsttAecpkE=
-  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  type: vless
+  server: cf.090227.xyz
+  port: 443
+  uuid: 998a0cae-51da-42d2-b912-41193645da37
+  cipher: auto
   udp: true
-  ip-version: ipv6-prefer
-  reserved:
-  - 99
-  - 204
-  - 140
+  tls: true
+  ws-opts:
+    path: /?proxyip=us.ipdb.rr.nu
+    headers:
+      Host: chromecfyouxuan.zj0078.workers.dev
+  servername: chromecfyouxuan.zj0078.workers.dev
   remote-dns-resolve: true
   dns:
   - 1.1.1.1
