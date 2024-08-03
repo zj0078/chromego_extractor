@@ -25,7 +25,9 @@ proxies:
         Host: chromecfyouxuan.zj0078.workers.dev    
     servername: chromecfyouxuan.zj0078.workers.dev
     remote-dns-resolve: true
-    dns: [ 1.1.1.1, 8.8.8.8 ]
+    dns: 
+    - 1.1.1.1
+    - 8.8.8.8
     dialer-proxy: "☁ WARP前置节点"
 proxy-groups:
   - name: 🚀 节点选择
