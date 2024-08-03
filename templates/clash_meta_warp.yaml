@@ -19,7 +19,8 @@ proxies:
     cipher: auto
     udp: true
     tls: true
-     skip-cert-verify: true
+    network: ws
+    skip-cert-verify: true
     ws-opts: 
       path: /?proxyip=proxyip.us.fxxk.dedyn.io
       headers:
