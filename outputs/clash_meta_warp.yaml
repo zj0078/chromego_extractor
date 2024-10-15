@@ -63,7 +63,22 @@ proxies:
   password: dongtaiwang.com
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🏳 Unknown-vmess | 0-0
+- name: 🇺🇸 US-vless | 0-0
+  type: vless
+  server: 108.181.3.68
+  port: 52562
+  uuid: 47b8b611-9e64-4d59-a1ef-b51b3ffc0cae
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.amazon.com
+  network: tcp
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: /
+  reality-opts:
+    public-key: qvdphcXh7EkRcfJ7XXB5v0KH9e2RqZQhL2QNyLQdsm8
+    short-id: ''
+- name: 🏳 Unknown-vmess | 1-0
   type: vmess
   server: 104.21.238.36
   port: 2086
@@ -93,7 +108,8 @@ proxy-groups:
   - 🇷🇺 RU-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇺🇸 US-vless | 0-0
+  - 🏳 Unknown-vmess | 1-0
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -103,7 +119,8 @@ proxy-groups:
   - 🇷🇺 RU-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇺🇸 US-vless | 0-0
+  - 🏳 Unknown-vmess | 1-0
 - name: ⚖ 负载均衡
   type: load-balance
   url: http://www.gstatic.com/generate_204
@@ -113,7 +130,8 @@ proxy-groups:
   - 🇷🇺 RU-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇺🇸 US-vless | 0-0
+  - 🏳 Unknown-vmess | 1-0
 - name: ☁ WARP前置节点
   type: select
   proxies:
@@ -123,7 +141,8 @@ proxy-groups:
   - 🇷🇺 RU-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇺🇸 US-vless | 0-0
+  - 🏳 Unknown-vmess | 1-0
 - name: 📺 巴哈姆特
   type: select
   proxies:
@@ -133,7 +152,8 @@ proxy-groups:
   - 🇷🇺 RU-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇺🇸 US-vless | 0-0
+  - 🏳 Unknown-vmess | 1-0
 - name: 📺 哔哩哔哩
   type: select
   proxies:
@@ -143,7 +163,8 @@ proxy-groups:
   - 🇷🇺 RU-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇺🇸 US-vless | 0-0
+  - 🏳 Unknown-vmess | 1-0
 - name: 🌏 国内媒体
   type: select
   proxies:
@@ -153,7 +174,8 @@ proxy-groups:
   - 🇷🇺 RU-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇺🇸 US-vless | 0-0
+  - 🏳 Unknown-vmess | 1-0
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -163,7 +185,8 @@ proxy-groups:
   - 🇷🇺 RU-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇺🇸 US-vless | 0-0
+  - 🏳 Unknown-vmess | 1-0
 - name: 📲 电报信息
   type: select
   proxies:
@@ -173,7 +196,8 @@ proxy-groups:
   - 🇷🇺 RU-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇺🇸 US-vless | 0-0
+  - 🏳 Unknown-vmess | 1-0
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
@@ -183,7 +207,8 @@ proxy-groups:
   - 🇷🇺 RU-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇺🇸 US-vless | 0-0
+  - 🏳 Unknown-vmess | 1-0
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
@@ -193,7 +218,8 @@ proxy-groups:
   - 🇷🇺 RU-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇺🇸 US-vless | 0-0
+  - 🏳 Unknown-vmess | 1-0
 - name: 🍎 苹果服务
   type: select
   proxies:
@@ -203,7 +229,8 @@ proxy-groups:
   - 🇷🇺 RU-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇺🇸 US-vless | 0-0
+  - 🏳 Unknown-vmess | 1-0
 - name: 📢 谷歌FCM
   type: select
   proxies:
@@ -213,7 +240,8 @@ proxy-groups:
   - 🇷🇺 RU-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇺🇸 US-vless | 0-0
+  - 🏳 Unknown-vmess | 1-0
 - name: 🤖 OpenAI
   type: select
   proxies:
@@ -223,7 +251,8 @@ proxy-groups:
   - 🇷🇺 RU-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇺🇸 US-vless | 0-0
+  - 🏳 Unknown-vmess | 1-0
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -242,7 +271,8 @@ proxy-groups:
   - 🇷🇺 RU-hysteria | 6-1
   - 🇷🇺 RU-Hysteria | 0-0
   - 🇷🇺 RU-Hysteria2 | 0-0
-  - 🏳 Unknown-vmess | 0-0
+  - 🇺🇸 US-vless | 0-0
+  - 🏳 Unknown-vmess | 1-0
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
