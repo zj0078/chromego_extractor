@@ -31,18 +31,35 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: ☁ WARP前置节点
-- name: 🇷🇺 RU-hysteria | 6-1
-  type: hysteria
+- name: 🇷🇺 RU-vless | 6-1
+  type: vless
   server: 46.29.166.206
-  port: 100
-  auth_str: dongtaiwang.com
+  port: 400
+  uuid: ff7b0d54-ecdf-4ff1-be04-f8fd11693ba2
+  network: tcp
+  udp: true
+  tls: true
+  flow: xtls-rprx-vision
+  servername: www.paypal.com
+  reality-opts:
+    public-key: bzpKT_Fgsm2k0oAe5SXJmbQN8OxK4AA4NR42yqM-hnI
+    short-id: ''
+  client-fingerprint: chrome
+- name: 🇫🇷 FR-Hysteria | 0-0
+  type: hysteria
+  server: 62.210.8.63
+  port: 2345
+  ports: 2345
+  auth-str: dongtaiwang.com
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  sni: www.bing.com
-  skip-cert-verify: true
-  up: 11 Mbps
-  down: 55 Mbps
-- name: 🇷🇺 RU-Hysteria | 0-0
+- name: 🇷🇺 RU-Hysteria | 1-0
   type: hysteria
   server: 46.17.43.223
   port: 12311
@@ -150,8 +167,9 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇷🇺 RU-hysteria | 6-1
-  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-vless | 6-1
+  - 🇫🇷 FR-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -163,8 +181,9 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - 🇷🇺 RU-hysteria | 6-1
-  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-vless | 6-1
+  - 🇫🇷 FR-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -176,8 +195,9 @@ proxy-groups:
   interval: 300
   strategy: consistent-hashing
   proxies:
-  - 🇷🇺 RU-hysteria | 6-1
-  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-vless | 6-1
+  - 🇫🇷 FR-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -189,8 +209,9 @@ proxy-groups:
   - ⚖ 负载均衡
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇷🇺 RU-hysteria | 6-1
-  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-vless | 6-1
+  - 🇫🇷 FR-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -202,8 +223,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇷🇺 RU-hysteria | 6-1
-  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-vless | 6-1
+  - 🇫🇷 FR-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -215,8 +237,9 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇷🇺 RU-hysteria | 6-1
-  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-vless | 6-1
+  - 🇫🇷 FR-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -228,8 +251,9 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇷🇺 RU-hysteria | 6-1
-  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-vless | 6-1
+  - 🇫🇷 FR-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -241,8 +265,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇷🇺 RU-hysteria | 6-1
-  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-vless | 6-1
+  - 🇫🇷 FR-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -254,8 +279,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇷🇺 RU-hysteria | 6-1
-  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-vless | 6-1
+  - 🇫🇷 FR-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -267,8 +293,9 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇷🇺 RU-hysteria | 6-1
-  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-vless | 6-1
+  - 🇫🇷 FR-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -280,8 +307,9 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - ☁ WARP
-  - 🇷🇺 RU-hysteria | 6-1
-  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-vless | 6-1
+  - 🇫🇷 FR-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -293,8 +321,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇷🇺 RU-hysteria | 6-1
-  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-vless | 6-1
+  - 🇫🇷 FR-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -306,8 +335,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇷🇺 RU-hysteria | 6-1
-  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-vless | 6-1
+  - 🇫🇷 FR-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -319,8 +349,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇷🇺 RU-hysteria | 6-1
-  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-vless | 6-1
+  - 🇫🇷 FR-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
@@ -341,8 +372,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ☁ WARP
-  - 🇷🇺 RU-hysteria | 6-1
-  - 🇷🇺 RU-Hysteria | 0-0
+  - 🇷🇺 RU-vless | 6-1
+  - 🇫🇷 FR-Hysteria | 0-0
+  - 🇷🇺 RU-Hysteria | 1-0
   - 🇷🇺 RU-Hysteria2 | 0-0
   - 🏳 Unknown-vmess | 0-0
   - 🏳 Unknown-vmess | 1-0
